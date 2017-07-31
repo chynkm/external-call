@@ -8,4 +8,4 @@ services:
     working_dir: /go/src/fourth
     command: go run main.go
     # use this for compiling binary
-    # command: env GOOS=darwin GOARCH=amd64 go build -o externalcall main.go
+    # command: env GOOS=darwin GOARCH=amd64 go build -o externalcall_mac64 main.go

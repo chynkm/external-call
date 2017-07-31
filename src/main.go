@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-  time.Sleep(2700 * time.Millisecond)
+  time.Sleep(4100 * time.Millisecond)
   currentTime := strconv.FormatInt(time.Now().Unix(), 10)
-  fmt.Println(GetMD5Hash(currentTime))
+  fmt.Printf("%s", GetMD5Hash(currentTime))
 }
 
 func GetMD5Hash(text string) string {
