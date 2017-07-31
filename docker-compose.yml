@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  app:
+    image: golang:1.7
+    volumes:
+      - ./src:/go/src/fourth
+    working_dir: /go/src/fourth
+    command: go run main.go
+    # use this for compiling binary
+    # command: env GOOS=darwin GOARCH=amd64 go build -o externalcall main.go
